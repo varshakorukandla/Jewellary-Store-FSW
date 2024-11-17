@@ -20,9 +20,9 @@ const BeedJewellarySchema = new mongoose.Schema({
     }
 })
 
-const BeadJewellary = mongoose.model("Bead Jewellery", BeedJewellarySchema)
+const BeedJewellary = mongoose.model("Bead Jewellery", BeedJewellarySchema)
 
-module.exports = BeadJewellary
+module.exports = BeedJewellary
 
 
 
