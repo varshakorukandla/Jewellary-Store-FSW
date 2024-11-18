@@ -3,11 +3,11 @@ const mongoose = require('mongoose')
 const WeddingJewellarySchema = new mongoose.Schema({
     title: { // Property/Filed title
         type: String, // Data type of the Property
-        required: true // Nullable(false) or NotNullable(true) 
+        required: true, // Nullable(false) or NotNullable(true) 
     },
     img: {
         type: String,
-        required: true
+        required: true,
     },
     price: {
         type: String,
@@ -16,8 +16,8 @@ const WeddingJewellarySchema = new mongoose.Schema({
     },
     brand: {
         type:String,
-        required: true
-    }
+        required: true,
+    },
 })
 
 const WeddingJewellary = mongoose.model("Wedding Jewellery", WeddingJewellarySchema)

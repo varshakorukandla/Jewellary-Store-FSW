@@ -16,8 +16,8 @@ const PendantJewellarySchema = new mongoose.Schema({
     },
     brand: {
         type:String,
-        required: true
-    }
+        required: true,
+    },
 })
 
 const PendantJewellary = mongoose.model("Pendant Jewellery", PendantJewellarySchema)

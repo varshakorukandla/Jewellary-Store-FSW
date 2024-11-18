@@ -6,7 +6,7 @@ const HomeCarousel = () => {
     <>
       <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
         <div>
-          <img className="h-[50vh] object-cover" src="https://mustafajewellery.com/wp-content/uploads/2024/08/SG-Family-1.png" />
+          <img className="h-[80vh] object-cover" src="https://mustafajewellery.com/wp-content/uploads/2024/08/SG-Family-1.png" />
           {/* <p className="legend">Jewellary</p> */}
 
           <div className="absolute left-2 bottom-2 flex flex-col bg-white rounded-md">
@@ -19,7 +19,7 @@ const HomeCarousel = () => {
                 </div>
                 <div className="mt-6">
                   <p>
-                    <span className="text-5xl font-semibold tracking-tight text-purple-600">
+                    <span className="text-5xl font-semibold tracking-tight text-red-900">
                       40%
                     </span>
                     <span className="text-base font-medium text-gray-500"> offer </span>
@@ -30,7 +30,7 @@ const HomeCarousel = () => {
           </div>
         </div>
         <div>
-          <img className="h-[50vh] object-cover" src="https://png.pngtree.com/background/20230426/original/pngtree-necklace-with-diamond-pendant-on-a-black-background-picture-image_2481171.jpg" />
+          <img className="h-[80vh] object-cover" src="https://png.pngtree.com/background/20230426/original/pngtree-necklace-with-diamond-pendant-on-a-black-background-picture-image_2481171.jpg" />
           {/* <p className="legend">Diamond</p> */}
           <div className="absolute left-2 bottom-2 flex flex-col bg-white rounded-md">
             <div className="px-6 py-8 sm:p-10 sm:pb-6">
@@ -42,7 +42,7 @@ const HomeCarousel = () => {
                 </div>
                 <div className="mt-6">
                   <p>
-                    <span className="text-5xl font-semibold tracking-tight text-purple-600">
+                    <span className="text-5xl font-semibold tracking-tight text-red-900">
                       30%
                     </span>
                     <span className="text-base font-medium text-gray-500"> offer </span>
@@ -53,7 +53,7 @@ const HomeCarousel = () => {
           </div>
         </div>
         <div>
-          <img className="h-[50vh] object-cover" src="https://img.freepik.com/free-photo/top-view-sterling-silver-earrings-with-swarovski-crystal-with-studs-black-wall_140725-12952.jpg" />
+          <img className="h-[80vh] object-cover" src="https://png.pngtree.com/thumb_back/fw800/background/20240718/pngtree-white-gold-earrings-with-diamond-isolated-on-the-black-background-image_15888759.jpg" />
           {/* <p className="Elegant">TV</p> */}
           <div className="absolute left-2 bottom-2 flex flex-col bg-white rounded-md">
             <div className="px-6 py-8 sm:p-10 sm:pb-6">
@@ -65,7 +65,7 @@ const HomeCarousel = () => {
                 </div>
                 <div className="mt-6">
                   <p>
-                    <span className="text-5xl font-semibold tracking-tight text-purple-600">
+                    <span className="text-5xl font-semibold tracking-tight text-red-900">
                       50%
                     </span>
                     <span className="text-base font-medium text-gray-500"> offer </span>

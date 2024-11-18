@@ -1,5 +1,4 @@
-
-import axios from 'axios'
+ import axios from 'axios'
 
 
 const API = 'http://localhost:3000'
@@ -32,22 +31,22 @@ const deleteBeedJewellary = (id) => axios.delete(`${API}/BeedJewellary/delete/${
 // FashionJewellaryEndPonts
 const getFashionJewellary = () => axios.get(`${API}/FashionJewellary/all`)
 const getFashionJewellaryCount = () => axios.get(`${API}/FashionJewellary/count`)
-const addFashionJewellary = (product) => axios.post(`${API}/FashionJewellary/add`, Fashionjewellary)
-const editFashionJewellary = (product, id) => axios.put(`${API}/FashionJewellary/edit/${id}`, Fashionjewellary)
+const addFashionJewellary = (FashionJewellary) => axios.post(`${API}/FashionJewellary/add`, FashionJewellary)
+const editFashionJewellary = (FashionJewellary, id) => axios.put(`${API}/FashionJewellary/edit/${id}`, FashionJewellary)
 const deleteFashionJewellary = (id) => axios.delete(`${API}/FashionJewellary/delete/${id}`)
 
 // PendantJewellaryEndPonts
 const getPendantJewellary = () => axios.get(`${API}/PendantJewellary/all`)
 const getPendantJewellaryCount = () => axios.get(`${API}/PendantJewellary/count`)
-const addPendantJewellary = (product) => axios.post(`${API}/PendantJewellary/add`, Pendantjewellary)
-const editPendantJewellary = (product, id) => axios.put(`${API}/PendantJewellary/edit/${id}`, Pendantjewellary)
+const addPendantJewellary = (PendantJewellary) => axios.post(`${API}/PendantJewellary/add`, PendantJewellary)
+const editPendantJewellary = (PendantJewellary, id) => axios.put(`${API}/PendantJewellary/edit/${id}`, PendantJewellary)
 const deletePendantJewellary = (id) => axios.delete(`${API}/PendantJewellary/delete/${id}`)
 
 // WeddingJewellaryEndPonts
 const getWeddingJewellary = () => axios.get(`${API}/WeddingJewellary/all`)
 const getWeddingJewellaryCount = () => axios.get(`${API}/WeddingJewellary/count`)
-const addWeddingJewellary = (product) => axios.post(`${API}/WeddingJewellary/add`, Weddingjewellary)
-const editWeddingJewellary = (product, id) => axios.put(`${API}/WeddingJewellary/edit/${id}`, Weddingjewellary)
+const addWeddingJewellary = (WeddingJewellary) => axios.post(`${API}/WeddingJewellary/add`, WeddingJewellary)
+const editWeddingJewellary = (WeddingJewellary, id) => axios.put(`${API}/WeddingJewellary/edit/${id}`, WeddingJewellary)
 const deleteWeddingJewellary = (id) => axios.delete(`${API}/WeddingJewellary/delete/${id}`)
 
 //UserEndPoints

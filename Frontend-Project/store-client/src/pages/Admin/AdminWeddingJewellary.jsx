@@ -100,7 +100,7 @@ const AdminWeddingJewellary = () => {
     return (
       <>
         <div className='w-screen h-[90vh] flex flex-col justify-center items-center'>
-          <Loader2 className='text-purple-500 h-14 w-14 animate-spin' />
+          <Loader2 className='text-red-800 h-14 w-14 animate-spin' />
         </div>
       </>
     )
@@ -129,7 +129,7 @@ const AdminWeddingJewellary = () => {
         </button>
       </div>
       <table className='w-full h-full border-collapse border shadow-lg rounded-md'>
-        <thead className='shadow-md font-bold text-purple-500 text-left rounded-md'>
+        <thead className='shadow-md font-bold text-red-800 text-left rounded-md'>
           <tr>
             <th className='p-6'>PID</th>
             <th className='p-6'>Image</th>
@@ -155,8 +155,8 @@ const AdminWeddingJewellary = () => {
                     onClick={() => { editHelper(WeddingJewellary) }}>
                     <Pencil />
                   </button>
-                  <button className='h-15 w-15 border-red-500 border-2 p-1 rounded-md text-red-500 shadow-md
-               hover:bg-red-500 hover:text-white hover:shadow-red-500'
+                  <button className='h-15 w-15 border-purple-500 border-2 p-1 rounded-md text-purple-500 shadow-md
+               hover:bg-purple-500 hover:text-white hover:shadow-purple-500'
                     onClick={() => { handleDelete(WeddingJewellary._id) }}>
                     <Trash />
                   </button>
@@ -174,8 +174,8 @@ const AdminWeddingJewellary = () => {
               <div className='h-full w-full flex flex-col justify-center items-center text-lg font-semibold'>
                 <div className="h-[20%] w-[80%] flex flex-row justify-center items-center">
                   <h1 className='w-1/2 text-left text-xl my-6 font-bold text-green-500'>Add Product</h1>
-                  <div className="w-1/2 flex justify-end items-center text-red-500 cursor-pointer" onClick={() => { setShowAdd(!showAdd) }}>
-                    <X className="h-8 w-8 border-2 p-1  border-red-500 rounded-full  hover:bg-red-500 hover:text-white" />
+                  <div className="w-1/2 flex justify-end items-center text-purple-500 cursor-pointer" onClick={() => { setShowAdd(!showAdd) }}>
+                    <X className="h-8 w-8 border-2 p-1  border-purple-500 rounded-full  hover:bg-purple-500 hover:text-white" />
                   </div>
                 </div>
                 <form className='h-[70%] w-[80%] flex flex-col justify-center items-center gap-8' onSubmit={handleAdd}>
@@ -197,14 +197,14 @@ const AdminWeddingJewellary = () => {
               <div className='h-full w-full flex flex-col justify-center items-center text-lg font-semibold'>
                 <div className="h-[20%] w-[80%] flex flex-row justify-center items-center">
                   <h1 className='w-1/2 text-left text-xl my-6 font-bold text-blue-500'>Edit Product</h1>
-                  <div className="w-1/2 flex justify-end items-center text-red-500 cursor-pointer" onClick={() => { setShowEdit(!showEdit) }}>
-                    <X className="h-8 w-8 border-2 p-1  border-red-500 rounded-full  hover:bg-red-500 hover:text-white" />
+                  <div className="w-1/2 flex justify-end items-center text-purple-500 cursor-pointer" onClick={() => { setShowEdit(!showEdit) }}>
+                    <X className="h-8 w-8 border-2 p-1  border-purple-500 rounded-full  hover:bg-purple-500 hover:text-white" />
                   </div>
                 </div>
                 <form className='h-[70%] w-[80%] flex flex-col justify-center items-center gap-8' onSubmit={handleEdit}>
-                  <input ref={titleRef} type="text" name="" id="title" placeholder='Title' defaultValue={currentWeddingtJewellary.title} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required autoFocus />
+                  <input ref={titleRef} type="text" name="" id="title" placeholder='Title' defaultValue={currentWeddingJewellary.title} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required autoFocus />
                   <input ref={imgRef} type="text" name="" id="img" placeholder='Image URL' defaultValue={currentWeddingJewellary.img} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required />
-                  <input ref={priceRef} type="text" name="" id="price" placeholder='Price' defaultValue={currentWeddingtJewellary.price} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required />
+                  <input ref={priceRef} type="text" name="" id="price" placeholder='Price' defaultValue={currentWeddingJewellary.price} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required />
                   <input ref={brandRef} type="text" name="" id="brand" placeholder='brand' defaultValue={currentWeddingJewellary.brand} className='w-full shadow-sm outline-none bg-[#f5f5f7] border-b-2 border-transparent p-4 focus:shadow-lg focus:border-b-2 focus:border-blue-400 rounded-sm' required />
                   <button type="submit" className="w-full h-[3rem]  shadow-lg shadow-gray-400 hover:shadow-blue-400 bg-blue-500 text-white rounded-sm outline-none">Save</button>
                 </form>

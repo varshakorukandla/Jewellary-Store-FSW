@@ -3,11 +3,11 @@ const mongoose = require('mongoose')
 const BeedJewellarySchema = new mongoose.Schema({
     title: { // Property/Filed title
         type: String, // Data type of the Property
-        required: true // Nullable(false) or NotNullable(true) 
+        required: true,// Nullable(false) or NotNullable(true) 
     },
     img: {
         type: String,
-        required: true
+        required: true,
     },
     price: {
         type: String,
@@ -15,9 +15,9 @@ const BeedJewellarySchema = new mongoose.Schema({
         // unique:true
     },
     brand: {
-        type:String,
-        required: true
-    }
+        type: String,
+        required: true,
+    },
 })
 
 const BeedJewellary = mongoose.model("Bead Jewellery", BeedJewellarySchema)

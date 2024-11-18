@@ -8,19 +8,19 @@ const AdminLeftBar = () => {
       path: '/admin/dashboard'
     },
     {
-      title: 'Bead Jewellary',
+      title: 'Bead Jewellery',
       path: '/admin/BeedJewellary'
     },
     {
-      title: 'Fashion Jewellary',
+      title: 'Fashion Jewellery',
       path: '/admin/FashionJewellary'
     },
     {
-        title: 'Pendant Jewellary',
+        title: 'Pendant Jewellery',
         path: '/admin/PendantJewellary'
     },
     {
-        title: 'Wedding Jewellary',
+        title: 'Wedding Jewellery',
         path: '/admin/WeddingJewellary'
     },
     {
@@ -35,12 +35,12 @@ const AdminLeftBar = () => {
   return (
     <div className='w-full h-screen shadow-purple-400 shadow-md  flex justify-center items-center'>
       <div className='h-full w-full flex flex-col'>
-        <div className='h[20%] w-full text-purple-500 flex justify-center font-bold text-2xl items-center'>
-          JEWELLARY
+        <div className='h[20%] w-full hover:text-red-800 flex justify-center font-bold text-2xl items-center'>
+          JEWELLERY
         </div>
         <div className='h-[80%] w-full flex flex-col items-center'>
           {Linksdata.map((link, index) => (
-            <NavLink to={link.path} key={index} className='h-[10%] w-full px-8 hover:bg-purple-500/90 hover:text-white flex justify-start items-center rounded-sm shadow-md'>
+            <NavLink to={link.path} key={index} className='h-[10%] w-full px-8 hover:bg-red-500/90 hover:text-white flex justify-start items-center rounded-sm shadow-md'>
               {link.title}
             </NavLink>
           ))

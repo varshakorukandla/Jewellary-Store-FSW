@@ -116,7 +116,7 @@ const AdminUsers = () => {
     return (
       <>
         <div className='w-screen h-[90vh] flex flex-col justify-center items-center'>
-          <Loader2 className='text-purple-500 h-14 w-14 animate-spin' />
+          <Loader2 className='text-red-800 h-14 w-14 animate-spin' />
         </div>
       </>
     )
@@ -145,7 +145,7 @@ const AdminUsers = () => {
         </button>
       </div>
       <table className='w-full h-full border-collapse border shadow-lg rounded-md'>
-        <thead className='shadow-md font-bold text-purple-500 text-left rounded-md'>
+        <thead className='shadow-md font-bold text-red-800 text-left rounded-md'>
           <tr>
             <th className='p-6'>UID</th>
             <th className='p-6'>Name</th>
@@ -176,8 +176,8 @@ const AdminUsers = () => {
                     onClick={() => { resetHelper(user) }}>
                     <Key />
                   </button>
-                  <button className='h-15 w-15 border-red-500 border-2 p-1 rounded-md text-red-500 shadow-md
-               hover:bg-red-500 hover:text-white hover:shadow-red-500'
+                  <button className='h-15 w-15 border-purple-500 border-2 p-1 rounded-md text-purple-500 shadow-md
+               hover:bg-purple-500 hover:text-white hover:shadow-purple-500'
                     onClick={() => { handleDelete(user._id) }}>
                     <Trash />
                   </button>
@@ -195,8 +195,8 @@ const AdminUsers = () => {
               <div className='h-full w-full flex flex-col justify-center items-center text-lg font-semibold'>
                 <div className="h-[20%] w-[80%] flex flex-row justify-center items-center">
                   <h1 className='w-1/2 text-left text-xl my-6 font-bold text-green-500'>Add User</h1>
-                  <div className="w-1/2 flex justify-end items-center text-red-500 cursor-pointer" onClick={() => { setShowAdd(!showAdd) }}>
-                    <X className="h-8 w-8 border-2 p-1  border-red-500 rounded-full  hover:bg-red-500 hover:text-white" />
+                  <div className="w-1/2 flex justify-end items-center text-purple-500 cursor-pointer" onClick={() => { setShowAdd(!showAdd) }}>
+                    <X className="h-8 w-8 border-2 p-1  border-purple-500 rounded-full  hover:bg-purple-500 hover:text-white" />
                   </div>
                 </div>
                 <form className='h-[70%] w-[80%] flex flex-col justify-center items-center gap-8' onSubmit={handleAdd}>
@@ -224,8 +224,8 @@ const AdminUsers = () => {
               <div className='h-full w-full flex flex-col justify-center items-center text-lg font-semibold'>
                 <div className="h-[20%] w-[80%] flex flex-row justify-center items-center">
                   <h1 className='w-1/2 text-left text-xl my-6 font-bold text-blue-500'>Edit Product</h1>
-                  <div className="w-1/2 flex justify-end items-center text-red-500 cursor-pointer" onClick={() => { setShowEdit(!showEdit) }}>
-                    <X className="h-8 w-8 border-2 p-1  border-red-500 rounded-full  hover:bg-red-500 hover:text-white" />
+                  <div className="w-1/2 flex justify-end items-center text-purple-500 cursor-pointer" onClick={() => { setShowEdit(!showEdit) }}>
+                    <X className="h-8 w-8 border-2 p-1  border-purple-500 rounded-full  hover:bg-purple-500 hover:text-white" />
                   </div>
                 </div>
                 <form className='h-[70%] w-[80%] flex flex-col justify-center items-center gap-8' onSubmit={handleEdit}>
@@ -252,8 +252,8 @@ const AdminUsers = () => {
               <div className='h-full w-full flex flex-col justify-center items-center text-lg font-semibold'>
                 <div className="h-[20%] w-[80%] flex flex-row justify-center items-center">
                   <h1 className='w-1/2 text-left text-xl my-6 font-bold text-orange-500'>Reset Password</h1>
-                  <div className="w-1/2 flex justify-end items-center text-red-500 cursor-pointer" onClick={() => { setShowReset(!showReset) }}>
-                    <X className="h-8 w-8 border-2 p-1  border-red-500 rounded-full  hover:bg-red-500 hover:text-white" />
+                  <div className="w-1/2 flex justify-end items-center text-purple-500 cursor-pointer" onClick={() => { setShowReset(!showReset) }}>
+                    <X className="h-8 w-8 border-2 p-1  border-purple-500 rounded-full  hover:bg-purple-500 hover:text-white" />
                   </div>
                 </div>
                 <form className='h-[70%] w-[80%] flex flex-col justify-center items-center gap-8' onSubmit={handleReset}>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
 import { Loader2 } from 'lucide-react'
-import AdminDashboardHomeCards from '../../components/Admin/AdminDashboardhomeCards'
+import { getBeedJewellaryCount, getFashionJewellaryCount, getPendantJewellaryCount, getWeddingJewellaryCount,  getUsersCount } from '../../api/api'
+import AdminDashboardHomeCards from '../../components/Admin/AdminDashboardHomeCards'
 const AdminDashboard = () => {
   const [users, setUsers] = useState(0)
   const [BeedJewellary, setBeedJewellary] = useState(0)
@@ -28,7 +29,7 @@ const AdminDashboard = () => {
         setPendantJewellary(PendantJewellaryresponse.data.count)
       }
       const WeddingJewellaryresponse = await getWeddingJewellaryCount()
-      if (weddingJewellaryresponse.status === 200) {
+      if (WeddingJewellaryresponse.status === 200) {
         setWeddingJewellary(WeddingJewellaryresponse.data.count)
       }
     } catch (error) {
@@ -45,7 +46,7 @@ const AdminDashboard = () => {
     return (
       <>
         <div className='w-screen h-[90vh] flex flex-col justify-center items-center'>
-          <Loader2 className='text-purple-500 h-14 w-14 animate-spin' />
+          <Loader2 className='text-red-800 h-14 w-14 animate-spin' />
         </div>
       </>
     )

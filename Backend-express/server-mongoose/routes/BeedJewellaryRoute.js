@@ -14,8 +14,8 @@ router.get('/count', async (req, res) => {
 // Method : GET  || API : localhost:3000/products/all
 router.get('/all', async (req, res) => {
     try {
-        const BeedJewellary = await BeedJewellary.find()
-        return res.status(200).json(BeedJewellary)
+        const beedjewellary = await BeedJewellary.find()
+        return res.status(200).json(beedjewellary)
     } catch (error) {
         return res.status(500).json({ message: error.message })
     }
